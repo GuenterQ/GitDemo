@@ -23,6 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "stdint.h"
 
 /* USER CODE END Includes */
 
@@ -95,6 +96,17 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  static uint32_t u32_Cnt = 0;
+
+	  if (u32_Cnt >= 10)
+	  {
+		  u32_Cnt = 0;
+	  }
+	  else
+	  {
+		  u32_Cnt++;
+	  }
+
   }
   /* USER CODE END 3 */
 }
